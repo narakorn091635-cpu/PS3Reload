@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-header">
+            <div class="logo">PERSONA 3 Reload</div>
+            <button class="hamburger" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    <div class="p3-status-bar">
+        <div class="status-item">
+            <span class="status-label">DATE</span>
+            <span class="status-val">10/27 [TUE]</span>
+         </div>
+        <div class="status-divider"></div>
+        <div class="status-item">
+            <span class="status-label">MOON PHASE</span>
+            <span span class="status-val moon-glow">FULL MOON // 100%</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">
+            <span class="status-label">TIME</span>
+         <span class="status-val text-red">MIDNIGHT : DARK HOUR</span>
+    </div>
+</div>
+
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="http://">DORMITORY</a></li>
+            <li><a href="http://">EQUIPMENT</a></li>
+            <li><a href="http://">S.E.E.S.</a></li>
+            <li><a href="http://">NAVIGATOR</a></li>
+        </ul>
+    
+        
+        <div class="nav-auth" id="nav-auth">
+            <button class="btn-login">AWAKEN</button>
+        </div>
+    </nav>
+
+    <section class="velvet-banner">
+        <div class="velvet-border-accent"></div>
+        <div class="velvet-badge">GUEST OF THE BLUE ROOM</div>
+        <h2 class="velvet-title">WELCOME TO THE VELVET ROOM</h2>
+        <p class="velvet-quote">"This place exists betwixt dream and reality, mind and matter..."</p>
+        <div class="velvet-tarot-tag">// CONTRACT & DESTINY PROTOCOL</div>
+    </section>
+    
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="https://images.gamegator.net/co73uv" alt="">
+            <div class="image-title">AIGIS</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrF1TQ0oWPQjufZzRxOYPN5dqGcVrT1ey3QkwAdmlRuQrhx87UPicRoXM&s=10"  alt="">
+            <div class="image-title">EPISODE AIGIS</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i.redd.it/0qlup8lgx1ic1.jpeg" alt="">
+            <div class="image-title">MAKOTO YUKI</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i1.sndcdn.com/artworks-aktoAG2gTqMitTBv-QPLdkA-t1080x1080.jpg" alt="">
+            <div class="image-title">ANTI-SHADOW WEAPON</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://i1.sndcdn.com/artworks-SeM53TVnyyq5Baxf-NhXiJQ-t1080x1080.jpg" alt="">
+            <div class="image-title">THE ANSWER</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlECQtZxLJqq0kU-MAv4Q2t2YWa3QhlLAuAkol4sYvXQ&s=10" alt="">
+            <div class="image-title">TARTARUS ARCHIVE</div>
+        </div>
+        </div>
+        
+       
+<section class="p3-radar-section">
+    <div class="radar-box">
+        <!-- แถบหัวเรดาร์ -->
+        <div class="radar-header">
+            <div class="radar-header-left">
+                <span class="radar-tag">TACTICAL HUD</span>
+                <span class="radar-title">TARTARUS EXPLORATION LOG // THE DARK HOUR</span>
+            </div>
+            <div class="radar-danger-pill">
+                <span class="blink-dot"></span>
+                DANGER: THE REAPER DETECTED
+            </div>
+        </div>
+
+        <div class="radar-grid">
+            <div class="radar-card">
+                <span class="r-label">CURRENT SECTOR</span>
+                <div class="r-val text-cyan">YABASHIHARA</div>
+                <div class="r-sub">FLOOR 89F // UPPER TIER</div>
+            </div>
+
+            <div class="radar-card">
+                <span class="r-label">TACTICAL STATUS</span>
+                <div class="r-val text-green">ENGAGED</div>
+                <div class="r-sub">S.E.E.S. SQUAD ON STANDBY</div>
+            </div>
+
+
+            <div class="radar-card">
+                <span class="r-label">NAVIGATOR SCAN</span>
+                <div class="r-val text-purple">SHADOWS x 04</div>
+                <div class="r-sub">WEAKNESS: ELECTRIC / ZIO</div>
+            </div>
+
+            <div class="radar-card">
+                <span class="r-label">EQUIPPED PERSONA</span>
+                <div class="r-val text-gold">ORPHEUS TELOS</div>
+                <div class="r-sub">LV. 72 // FOOL ARCANUM</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navAuth = document.getElementById('nav-auth');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navAuth.classList.toggle('active');
+            menuToggle.classList.toggle('toggle');
+        })
+    </script>
+</body>
+
+
+</html>
